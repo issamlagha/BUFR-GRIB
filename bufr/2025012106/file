@@ -1,0 +1,6 @@
+synop.bufr
+count              centre             stationOrSiteName  blockNumber        stationNumber      
+1                  214                SAN SEBASTIAN-IGUELD  8                  27                
+2                  214                SAN SEBASTIAN-IGUELD  8                  27                
+3                  214                ALMERIA            blockNumber (Passed array is too small)
+	Hint: Tool bufr_ls cannot print keys of array type. Use grib_filter.

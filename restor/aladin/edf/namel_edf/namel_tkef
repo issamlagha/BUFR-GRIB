@@ -1,0 +1,44 @@
+ &NAML
+   TABCH(1)='H00002TKE',
+   TABCH(2)='H00010TKE',
+   TABCH(3)='H00050TKE',
+   TABCH(4)='H00100TKE',
+   TABCH(5)='H00250TKE',
+   TABCH(6)='H00500TKE',
+   TABCH(7)='H00750TKE',
+   TABCH(8)='H01000TKE',
+   TABCH(9)='H01250TKE',
+   TABCH(10)='H01500TKE',
+   TABCH(11)='H02000TKE',
+   TABCH(12)='H02500TKE',
+   TABCH(13)='H03000TKE',
+   TABCH(14)='H04000TKE',
+   TABCH(15)='H05000TKE',
+   TABCH(16)='H06000TKE',
+   TABCH(17)='H07000TKE',
+   TABCH(18)='H08000TKE',
+   TABCH(19)='H09000TKE',
+   TABCH(20)='H10000TKE',
+ &END
+
+        
+       
+     
+     
+     
+     
+      
+      
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    
+

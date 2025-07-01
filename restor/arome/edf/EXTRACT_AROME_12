@@ -1,0 +1,123 @@
+#!/bin/sh
+
+FULLPOS=FULLPOS+2020051612
+
+echo " start ...extract arome.... "
+for RR in 00 03 06 09 12 15 18 21 24   
+do
+echo "extract TEMP"	
+echo "extract TEMP"     
+./edf namel_edf/namel_clst ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/t2m_${RR}
+echo "extract TMAX"
+./edf namel_edf/namel_tmax ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/tmax_${RR}
+echo "extract TMIN"
+./edf namel_edf/namel_tmin ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/tmin_${RR}
+echo "extract HUM"
+./edf namel_edf/namel_clsh ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/clsh_${RR}
+echo "extract SURFACPLUIE"
+./edf namel_edf/namel_acpluie ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/acpluie_${RR}
+echo "extract SURFACNEIGE"
+./edf namel_edf/namel_acneige ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/acneige_${RR}
+echo "extract SURFEACGRAUPEL"
+./edf namel_edf/namel_acgraupel ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/acgraupel_${RR}
+echo "extract u-wind"
+./edf namel_edf/namel_clsu ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/clsu_${RR}
+echo "extract v-wind"
+./edf namel_edf/namel_clsv ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/clsv_${RR}
+echo "extract u-wind-raf"
+./edf namel_edf/namel_uraf ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/uraf_${RR}
+echo "extract v-wind-raf"
+./edf namel_edf/namel_vraf ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/vraf_${RR}
+echo "extract neb_bas"
+./edf namel_edf/namel_nebbasse ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/neb_bas_${RR}
+echo "extract neb_moy"
+./edf namel_edf/namel_nebmoy ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/neb_moy_${RR}
+echo "extract neb_hau"
+./edf namel_edf/namel_nebhaut ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/neb_hau_${RR}
+echo "extract NEB TOTAL"
+./edf namel_edf/namel_nebtot ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/neb_tot_${RR}
+echo "extract neb_conv"
+./edf namel_edf/namel_nebconv ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/neb_conv_${RR}
+echo "extract MSLP"
+./edf namel_edf/namel_mslp ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/mslp_${RR}
+echo "extract SURF_TOT_WAT_VAP"
+./edf namel_edf/namel_wat_vap ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/wat_vap_${RR}
+echo "extract SURF_CAPE"
+./edf namel_edf/namel_cape ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/cape_${RR}
+echo "extract ALTITUDE"
+echo "extract TEMP"
+./edf namel_edf/namel_temp ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/temp_${RR}
+echo "extract HUM"
+./edf namel_edf/namel_hum ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/hum_${RR}
+echo "extract U"
+./edf namel_edf/namel_U ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/u_${RR}
+echo "extract V"
+./edf namel_edf/namel_V ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/v_${RR}
+echo "extract CLOUD WATER"
+./edf namel_edf/namel_cld_wat ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/cld_wat_${RR}
+echo "extract CLOUD FRAC"
+./edf namel_edf/namel_cld_fra ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/cld_fra_${RR}
+echo "extract ICE CRYST"
+./edf namel_edf/namel_ice_cry ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/ice_cry_${RR}
+echo "extract SNOW"
+./edf namel_edf/namel_snow ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/snow_${RR}
+echo "extract RAIN"
+./edf namel_edf/namel_rain ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/rain_${RR}
+echo "extract GRAUPEL"
+./edf namel_edf/namel_graupel ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/graupel_${RR}
+echo "extract TKE"
+./edf namel_edf/namel_tke ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/tke_${RR}
+echo "extract TEMP POT"
+./edf namel_edf/namel_temp_pot ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/temp_pot_${RR}
+echo "extract THETA PRIM"
+./edf namel_edf/namel_theta_prim ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/tetha_prim_${RR}
+echo "extract VERT VELOC"
+./edf namel_edf/namel_vert_vel ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/vert_vel_${RR}
+echo "extract POT VORT"
+./edf namel_edf/namel_pot_vort ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/pot_vort_${RR}
+echo "extract VITESS VE"
+./edf namel_edf/namel_vvert ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/vvert_${RR}
+echo "extract ABS VORT"
+./edf namel_edf/namel_abs_vort ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/abs_vort_${RR}
+echo "extract DIVER"
+./edf namel_edf/namel_div ../data/r12/${FULLPOS}_${RR}
+mv   ASCII.${FULLPOS}_${RR} ../output/r12/div_${RR}
+done
+rm -f INFO*
+exit

@@ -1,0 +1,42 @@
+-------------------------------------------------------------------
+  Chaine de Post-traitement des sorties de modèle
+-------------------------------------------------------------------
+  Modèle     |     AROME
+-------------------------------------------------------------------
+  Situation  |     31/07/2023 ;  R00h ;  Ech 00h - 24h
+-------------------------------------------------------------------
+
+
+Step -0- :
+----------
+  Téléchargement des données FULLPOS à partir du HPC .....
+
+  >>> Vérification de la disponibilité des données dans /home/ilagha/RESTOR/AROME/data/r0
+ Les données ont été bien téléchargées, execution de l'étape suivante ... 
+
+
+Step -1- :
+----------
+  Traitement des données FULLPOS par l'utilitaire EDF .....
+
+  >>> Traitement terminé, vérifier la disponibilité des fichiers TEXT dans : /home/ilagha/RESTOR/AROME/output/2023073100/
+
+
+Step -2- :
+----------
+  Traitement des output TEXT en format ASCII .....
+
+  >>> Traitement terminé, vérifier la disponibilité des fichiers ASCII dans : /home/ilagha/RESTOR/AROME/SORTIE/2023073100/
+
+
+Step -3- :
+----------
+  Traçage des cartes AROME .....
+
+  >>> Traitement terminé, vérifier la disponibilité  des cartes dans : /home/ilagha/RESTOR/AROME/gifs/2023073100/
+      Toutes les cartes ont été compressées dans le fichier /home/ilagha/RESTOR/AROME/gifs/AROME_2023073100.tar.gz
+
+
+                         -------------------------------------------------------------------
+                                     Fin de la chaine de Post-traitement AROME              
+                         -------------------------------------------------------------------

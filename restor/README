@@ -1,0 +1,72 @@
+
+          -------------------------------------------------
+          *      Description du repertoire "RESTOR"       *
+          -------------------------------------------------
+               _______________________________________
+              |                                       |
+              |   Prévision Numérique du Temps        |
+              |   dernière Modification : 01/05/2022  |
+              |_______________________________________|
+
+* A propos :
+------------
+
+Le repertoire "RESTOR" contient un ensemble de scripts et de programmes qui
+permetent  de  faire des  retours  d'experience  sur  la base  des  modeles 
+"ALADIN" et "AROME" pour des situations précédentes, suite à la demande des
+utilisateurs (prévision, climatologie, clients externes, etc ..).
+
+Ce repertoire est composé de trois sous-repertoires :
+
+  -  ALADIN : Pour les retours d'experience avec le modele ALADIN;
+  -  AROME  : Pour les retours d'experience avec le modele AROME;
+  -  grads  : Contient les scripts necessaires pour le traçage des cartes.
+
+Les scripts et les programmes  sont  élaborés  sous  une forme exportable, 
+c'est à dire qu'il suffit de copier le repertoire "RESTOR" dans votre home
+et  lancer  les  retours  d'experience  sans  modifier  aucune  variable 
+d'environnement.
+
+* Avant la première utilisation :
+---------------------------------
+
+Introduisez  votre  mot  de  passe  d'accès  au calculateur dans le script 
+"****_GET_DATA.sh" : la ligne 34, à la place de 'HPC_PASSWORD').
+
+Installer la commande "sshpass" :     apt-get install sshpass
+
+* Exécution des scripts de traitement:
+--------------------------------------
+
+Il suffit de modifier le fichier de configuration de la date "date.config"
+en  actualisant les paramètres de la date (année, mois, jour, ...).
+
+Pour les deux  modèles (ALADIN et AROME),il y a un  script  principal  qui
+permet d'executer automatiquement  quatres (04) sous-scripts :
+
+  * Pour ALADIN :  
+  ---------------  
+
+     ./RUN-RESTOR-ALADIN.sh
+
+Ce script permet de lancer les scripts suivants :
+                          (1)    ./0-ALAD_GET_DATA.sh
+                          (2)    ./1-ALAD_EDF_JOB.sh
+                          (3)    ./2-ALAD_EXE_JOB.sh
+                          (4)    ./3-ALAD_GRADS_JOB.sh
+     
+
+  * Pour AROME :  
+  --------------
+
+     ./RUN-RESTOR-AROME.sh
+
+Ce script permet de lancer les scripts suivants :
+                          (1)    ./0-ARO_GET_DATA.sh
+                          (2)    ./1-ARO_EDF_JOB.sh
+                          (3)    ./2-ARO_EXE_JOB.sh
+                          (4)    ./3-ARO_GRADS_JOB.sh
+
+Prière de  consulter les fichiers log  (log.aladin et log.arome)  après
+l'execution  des scripts de post-traitement pour  chaque  modèles  afin
+de vérifier si  les  scripts ont fonctionné correctement.

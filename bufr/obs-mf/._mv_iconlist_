@@ -1,0 +1,7 @@
+25,13,NOTE,blacklist.global.txt
+173,13,NOTE,blacklist.local.txt
+299,13,BUFR,bufr-std.extract.amdar
+442,13,BUFR,bufr-std.extract.gpssol
+581,13,BUFR,bufr-std.extract.moored
+729,13,BUFR,bufr-std.extract.synop
+874,13,BUFR,bufr-std.extract.temp

@@ -1,0 +1,42 @@
+-------------------------------------------------------------------
+  Chaine de Post-traitement des sorties de modèle
+-------------------------------------------------------------------
+  Modèle     |     ALADIN
+-------------------------------------------------------------------
+  Situation  |     02/11/2023 ;  R00h ;  Ech 00h - 24h
+-------------------------------------------------------------------
+
+
+Step -0- :
+----------
+  Téléchargement des données FULLPOS à partir du HPC .....
+
+  >>> Vérification de la disponibilité des données dans /home/ilagha/RESTOR/ALADIN/data/r0
+ Les données ont été bien téléchargées, execution de l'étape suivante ... 
+
+
+Step -1- :
+----------
+  Traitement des données FULLPOS par l'utilitaire EDF .....
+
+  >>> Traitement terminé, vérifier la disponibilité des fichiers TEXT dans : /home/ilagha/RESTOR/ALADIN/output/2023110200/
+
+
+Step -2- :
+----------
+  Traitement des output TEXT en format ASCII .....
+
+  >>> Traitement terminé, vérifier la disponibilité des fichiers ASCII dans : /home/ilagha/RESTOR/ALADIN/SORTIE/2023110200/
+
+
+Step -3- :
+----------
+  Traçage des cartes ALADIN .....
+
+  >>> Traitement terminé, vérifier la disponibilité  des cartes dans : /home/ilagha/RESTOR/ALADIN/gifs/2023110200/
+      Toutes les cartes ont été compressées dans le fichier /home/ilagha/RESTOR/ALADIN/gifs/ALADIN_2023110200.tar.gz
+
+
+                         -------------------------------------------------------------------
+                                     Fin de la chaine de Post-traitement ALADIN              
+                         -------------------------------------------------------------------
