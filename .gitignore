@@ -8,3 +8,6 @@ bufr/temp.tar
 *.grib
 *.xml
 *.pyc
+*.tar
+*.grib
+*.bfr
