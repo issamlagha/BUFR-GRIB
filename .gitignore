@@ -11,3 +11,10 @@ bufr/temp.tar
 *.tar
 *.grib
 *.bfr
+# Fichiers volumineux à ignorer
+*.tar
+*.grib
+*.bfr
+*.xml
+*.bin
+*.dat
