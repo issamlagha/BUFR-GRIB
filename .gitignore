@@ -2,3 +2,9 @@ bufr/temp.tar
 *.tar
 bufr/temp.tar
 *.tar
+# Ignorer les fichiers volumineux
+*.tar
+*.bfr
+*.grib
+*.xml
+*.pyc
